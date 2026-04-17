@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nayi Disha — Har Kadam Ek Nayi Disha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <span class="logo-text">Nayi Disha</span>
+          <span class="logo-tagline">Har Kadam Ek Nayi Disha</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#donate" class="nav-donate-btn">Donate Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+    <div class="hero-content fade-in">
+      <span class="hero-badge">🇮🇳 Serving India Since 2018</span>
+      <h1 class="hero-heading">Your support,<br><span class="highlight" id="typedText"></span></h1>
+      <p class="hero-sub">Empowering communities across India through action,<br>compassion, and hope.</p>
+      <p class="hero-tagline-big">"Har Kadam Ek Nayi Disha"</p>
+      <div class="hero-btns">
+        <a href="#campaigns" class="btn btn-primary">See Campaigns</a>
+        <a href="#volunteer" class="btn btn-outline">Join as Volunteer</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓ Scroll to Explore</div>
+  </section>
+
+  <!-- CAMPAIGNS DASHBOARD -->
+  <section class="campaigns section-pad" id="campaigns">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Active Now</span>
+        <h2>Our Active Campaigns</h2>
+        <p>Every campaign is a step towards a better India. Your support makes it real.</p>
+      </div>
+      <div class="campaigns-grid">
+
+        <div class="campaign-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://d1u4oo4rb13yy8.cloudfront.net/article-bfffbueepu-1457429663.jpeg" alt="Clean Water" loading="lazy"/>
+            <span class="card-badge">💧 Jaipur, RJ</span>
+          </div>
+          <div class="card-body">
+            <h3>Clean Water for Rajasthan</h3>
+            <p>14 filtration units installed, 22 handwashing stations. 1,920 people impacted across 4 villages and 11 schools.</p>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span class="raised">₹8,36,500 raised</span>
+                <span class="goal">Goal: ₹11,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-width="76"></div></div>
+              <div class="progress-meta">
+                <span>476 Donors</span>
+                <span>72 Volunteers</span>
+                <span class="pct">76%</span>
+              </div>
+            </div>
+            <a href="#donate" class="btn btn-card">Donate</a>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://i0.wp.com/give.do/blog/wp-content/uploads/2023/10/International-Day-of-the-Girl-Child-donate-to-these-5-NGOs.jpg?resize=350%2C200&ssl=1" alt="Girl Child Education" loading="lazy"/>
+            <span class="card-badge">📚 Patna, BR</span>
+          </div>
+          <div class="card-body">
+            <h3>Girl Child Education Fund</h3>
+            <p>320 school kits, 148 fee supports, 42 bicycle grants. 91% school retention among supported girls.</p>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span class="raised">₹9,46,300 raised</span>
+                <span class="goal">Goal: ₹12,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-width="79"></div></div>
+              <div class="progress-meta">
+                <span>512 Donors</span>
+                <span>63 Volunteers</span>
+                <span class="pct">79%</span>
+              </div>
+            </div>
+            <a href="#donate" class="btn btn-card">Donate</a>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbEsUnPi1nmnUXgWBuAGftZlMeumhpvm8uw&s" alt="Hunger Drive" loading="lazy"/>
+            <span class="card-badge">🍱 Lucknow, UP</span>
+          </div>
+          <div class="card-body">
+            <h3>Hunger Drive</h3>
+            <p>38,400 meals served, 1,120 ration kits distributed. 2,850 individuals supported across 3 months.</p>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span class="raised">₹7,72,650 raised</span>
+                <span class="goal">Goal: ₹9,00,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-width="86"></div></div>
+              <div class="progress-meta">
+                <span>601 Donors</span>
+                <span>118 Volunteers</span>
+                <span class="pct">86%</span>
+              </div>
+            </div>
+            <a href="#donate" class="btn btn-card">Donate</a>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://www.lakshyam.co.in/wp-content/uploads/2021/12/Rooh-Main-Picture.jpg" alt="Women Empowerment" loading="lazy"/>
+            <span class="card-badge">💪 Bhopal, MP</span>
+          </div>
+          <div class="card-body">
+            <h3>Women Empowerment</h3>
+            <p>185 enrolled, 132 completed training, 74 micro-enterprise kits given. 78% reported income increase within 3 months.</p>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span class="raised">₹8,11,900 raised</span>
+                <span class="goal">Goal: ₹10,50,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-width="77"></div></div>
+              <div class="progress-meta">
+                <span>447 Donors</span>
+                <span>54 Volunteers</span>
+                <span class="pct">77%</span>
+              </div>
+            </div>
+            <a href="#donate" class="btn btn-card">Donate</a>
+          </div>
+        </div>
+
+        <div class="campaign-card reveal">
+          <div class="card-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqbhus-zlP11_v2yiGJhUAp2pffB5tslA3Q&s" alt="Plantation Drive" loading="lazy"/>
+            <span class="card-badge">🌳 Guwahati, AS</span>
+          </div>
+          <div class="card-body">
+            <h3>Plantation Drive</h3>
+            <p>12,500 saplings planted across 18 schools and 6 community parks. 74% sapling survival rate after 6 months.</p>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span class="raised">₹6,18,400 raised</span>
+                <span class="goal">Goal: ₹8,50,000</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" data-width="73"></div></div>
+              <div class="progress-meta">
+                <span>428 Donors</span>
+                <span>96 Volunteers</span>
+                <span class="pct">73%</span>
+              </div>
+            </div>
+            <a href="#donate" class="btn btn-card">Donate</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT MATRIX -->
+  <section class="impact section-pad" id="impact">
+    <div class="impact-bg-overlay"></div>
+    <div class="container">
+      <div class="section-header reveal" style="color:#fff;">
+        <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Our Numbers</span>
+        <h2 style="color:#fff;">Our Impact So Far</h2>
+        <p style="color:rgba(255,255,255,0.8);">Real numbers. Real lives changed. This is what your support makes possible.</p>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card reveal">
+          <div class="impact-icon">🌿</div>
+          <div class="impact-num" data-target="12">0</div>
+          <div class="impact-label">Active Campaigns</div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-icon">💰</div>
+          <div class="impact-num" data-target="52" data-prefix="₹" data-suffix="L+">0</div>
+          <div class="impact-label">Funds Raised</div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-icon">🙌</div>
+          <div class="impact-num" data-target="4800">0</div>
+          <div class="impact-label">Volunteers</div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-icon">🗺️</div>
+          <div class="impact-num" data-target="9">0</div>
+          <div class="impact-label">States Covered</div>
+        </div>
+      </div>
+      <div class="impact-extra-stats reveal">
+        <div class="extra-stat"><span>38,400</span><p>Meals Served</p></div>
+        <div class="extra-stat"><span>12,500</span><p>Trees Planted</p></div>
+        <div class="extra-stat"><span>320</span><p>Girls in School</p></div>
+        <div class="extra-stat"><span>185</span><p>Women Trained</p></div>
+        <div class="extra-stat"><span>1,920</span><p>Water Access</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORYTELLING VISUAL TRANSITION -->
+  <section class="story section-pad" id="story">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Journey</span>
+        <h2>How Your Donation Helps</h2>
+        <p>A simple act of giving sets off a powerful chain of change.</p>
+      </div>
+      <div class="story-steps reveal">
+        <div class="story-step">
+          <div class="step-icon">🤝</div>
+          <h3>You Donate</h3>
+          <p>You contribute any amount — every rupee is accounted for and used purposefully.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="story-step">
+          <div class="step-icon">🌍</div>
+          <h3>We Act</h3>
+          <p>Our on-ground teams mobilize volunteers, resources, and reach out to communities in need.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="story-step">
+          <div class="step-icon">❤️</div>
+          <h3>Lives Change</h3>
+          <p>Real families, real children, real communities — their lives are transformed forever.</p>
+        </div>
+      </div>
+
+      <div class="featured-story reveal">
+        <div class="featured-img">
+          <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSifEATL8ReiqXJ86cnIwEHmoIpMLLlVIX3tQ&s" alt="Featured Story" loading="lazy"/>
+          <div class="img-overlay">
+            <span>🌟 Featured Story</span>
+          </div>
+        </div>
+        <div class="featured-text">
+          <span class="section-tag">Girl Child Education Fund</span>
+          <h3>From Fields to Classrooms</h3>
+          <p>Priya, 12, from a small village in Bihar, had stopped attending school to help her family. Through the Girl Child Education Fund, she received a bicycle, school kit, and her fees were covered. Today, she ranks in the top 5 of her class and dreams of becoming a doctor.</p>
+          <blockquote>
+            "Because of Nayi Disha, my daughter can now go to school. We never thought this was possible for us."
+            <cite>— Meena Devi, Patna</cite>
+          </blockquote>
+          <a href="#donate" class="btn btn-primary">Support This Cause</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATION INTERFACE -->
+  <section class="donate section-pad" id="donate">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Give Today</span>
+        <h2>Make a Difference Today</h2>
+        <p>Your generosity directly funds the campaigns that change lives.</p>
+      </div>
+      <div class="donate-wrap reveal">
+        <div class="donate-left">
+          <h3>Why Donate?</h3>
+          <ul class="donate-points">
+            <li>✅ 100% funds go to campaigns</li>
+            <li>✅ Tax benefits under Section 80G</li>
+            <li>✅ Transparent impact reporting</li>
+            <li>✅ Verified NGO — ID #WB303</li>
+            <li>✅ Monthly donation option available</li>
+          </ul>
+          <div class="donor-trust">
+            <div class="trust-avatars">
+              <span>👤</span><span>👤</span><span>👤</span><span>👤</span>
+            </div>
+            <p><strong>2,464+</strong> donors have already contributed</p>
+          </div>
+        </div>
+        <div class="donate-form-wrap">
+          <form class="donate-form" id="donateForm" onsubmit="return false;">
+            <div class="amount-selector">
+              <p class="form-label">Select Amount</p>
+              <div class="amount-btns">
+                <button type="button" class="amt-btn" data-val="100">₹100</button>
+                <button type="button" class="amt-btn" data-val="500">₹500</button>
+                <button type="button" class="amt-btn active" data-val="1000">₹1000</button>
+                <button type="button" class="amt-btn" data-val="2000">₹2000</button>
+              </div>
+              <input type="number" id="customAmt" class="custom-input" placeholder="Enter custom amount (₹)" min="1"/>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="donorName" placeholder="Your full name" />
+                <span class="err" id="errName"></span>
+              </div>
+              <div class="form-group">
+                <label>Email *</label>
+                <input type="email" id="donorEmail" placeholder="your@email.com" />
+                <span class="err" id="errEmail"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone *</label>
+                <input type="tel" id="donorPhone" placeholder="10-digit mobile number" maxlength="10"/>
+                <span class="err" id="errPhone"></span>
+              </div>
+              <div class="form-group">
+                <label>Campaign *</label>
+                <select id="donorCampaign">
+                  <option value="">-- Select Campaign --</option>
+                  <option>Clean Water for Rajasthan</option>
+                  <option>Girl Child Education Fund</option>
+                  <option>Hunger Drive</option>
+                  <option>Women Empowerment</option>
+                  <option>Plantation Drive</option>
+                </select>
+                <span class="err" id="errCampaign"></span>
+              </div>
+            </div>
+
+            <div class="payment-toggle">
+              <p class="form-label">Payment Method</p>
+              <div class="toggle-btns">
+                <button type="button" class="toggle-btn active" id="upiBtn">📱 UPI</button>
+                <button type="button" class="toggle-btn" id="cardBtn">💳 Card</button>
+              </div>
+              <div class="payment-ui" id="upiUI">
+                <input type="text" placeholder="Enter UPI ID (e.g. name@upi)" class="custom-input"/>
+              </div>
+              <div class="payment-ui hidden" id="cardUI">
+                <input type="text" placeholder="Card Number" class="custom-input" maxlength="19"/>
+                <div class="form-row">
+                  <input type="text" placeholder="MM/YY" class="custom-input" maxlength="5"/>
+                  <input type="text" placeholder="CVV" class="custom-input" maxlength="3"/>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-donate" id="donateSub">💚 Donate Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER SIGNUP -->
+  <section class="volunteer section-pad" id="volunteer">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Join Us</span>
+        <h2>Join Our Mission</h2>
+        <p>Be the change. Volunteer with Nayi Disha and make every step count.</p>
+      </div>
+      <div class="volunteer-wrap reveal">
+        <div class="volunteer-info">
+          <h3>Why Volunteer?</h3>
+          <div class="vol-perks">
+            <div class="perk">🏅 Certificate of Appreciation</div>
+            <div class="perk">📣 Community Recognition</div>
+            <div class="perk">🤝 Network with changemakers</div>
+            <div class="perk">💼 Real-world experience</div>
+            <div class="perk">🌱 Be part of something bigger</div>
+          </div>
+          <img src="https://d3n2v804uranu1.cloudfront.net/wp-content/uploads/2021/09/ND_logo_2021_tagline_highRes.webp" alt="Volunteers" class="vol-img" loading="lazy"/>
+        </div>
+        <form class="vol-form" id="volForm" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="volName" placeholder="Your full name"/>
+              <span class="err" id="verrName"></span>
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" id="volEmail" placeholder="your@email.com"/>
+              <span class="err" id="verrEmail"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone *</label>
+              <input type="tel" id="volPhone" placeholder="10-digit mobile" maxlength="10"/>
+              <span class="err" id="verrPhone"></span>
+            </div>
+            <div class="form-group">
+              <label>City *</label>
+              <input type="text" id="volCity" placeholder="Your city"/>
+              <span class="err" id="verrCity"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Skills (Select all that apply) *</label>
+            <div class="checkboxes">
+              <label class="chk"><input type="checkbox" name="skill" value="Teaching"/> Teaching</label>
+              <label class="chk"><input type="checkbox" name="skill" value="Medical"/> Medical</label>
+              <label class="chk"><input type="checkbox" name="skill" value="Tech"/> Tech</label>
+              <label class="chk"><input type="checkbox" name="skill" value="Fundraising"/> Fundraising</label>
+              <label class="chk"><input type="checkbox" name="skill" value="Logistics"/> Logistics</label>
+            </div>
+            <span class="err" id="verrSkill"></span>
+          </div>
+          <div class="form-group">
+            <label>Availability *</label>
+            <select id="volAvail">
+              <option value="">-- Select Availability --</option>
+              <option>Weekdays</option>
+              <option>Weekends</option>
+              <option>Both</option>
+            </select>
+            <span class="err" id="verrAvail"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" id="volSub">🌿 Register as Volunteer</button>
+          <div class="vol-success hidden" id="volSuccess">
+            <span>🙏 Thank you for signing up! We'll contact you soon.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:1rem;">
+            <span class="logo-icon">🌿</span>
+            <div>
+              <span class="logo-text" style="color:#fff;">Nayi Disha</span>
+              <span class="logo-tagline" style="color:rgba(255,255,255,0.6);">Har Kadam Ek Nayi Disha</span>
+            </div>
+          </div>
+          <p class="footer-desc">An initiative to empower underprivileged communities across India through compassionate action and sustainable change.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">🌐</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#campaigns">Campaigns</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Campaigns</h4>
+          <ul>
+            <li><a href="#donate">Clean Water</a></li>
+            <li><a href="#donate">Girl Child Education</a></li>
+            <li><a href="#donate">Hunger Drive</a></li>
+            <li><a href="#donate">Women Empowerment</a></li>
+            <li><a href="#donate">Plantation Drive</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>📧 info@nayidisha.org</p>
+          <p>📞 +91 98765 43210</p>
+          <p>📍 Greater Noida, Uttar Pradesh</p>
+          <p>🏛️ NGO ID: #WB303</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Nayi Disha NGO. Built with ❤️ for <strong>Webathon 2K26</strong> — GNIOT CSE Tech Club</p>
+    </div>
+  </footer>
+
+  <!-- DONATION MODAL -->
+  <div class="modal-overlay hidden" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon">🙏</div>
+      <h3 id="modalTitle">Thank You!</h3>
+      <p id="modalMsg">Your donation has been received.</p>
+      <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
