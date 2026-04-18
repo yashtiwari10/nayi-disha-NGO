@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
+const path = require('path');
 
 const connectDB = require('./config/db');
 
@@ -9,18 +10,25 @@ const donationRoutes = require('./routes/donationRoutes');
 
 const app = express();
 
-// Middleware
+// ===== MIDDLEWARE =====
 app.use(cors());
 app.use(express.json());
 
-// DB
+// ===== DATABASE =====
 connectDB();
 
-// Routes
+// ===== API ROUTES =====
 app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/donate', donationRoutes);
 
-// Server
+// ===== SERVE FRONTEND =====
+app.use(express.static('C:\\Users\\yt436\\Documents\\Coding\\nayi-disha-NGO\\client\\public'));
+
+app.use((req, res) => {
+  res.sendFile('C:\\Users\\yt436\\Documents\\Coding\\nayi-disha-NGO\\client\\public\\index.html');
+});
+
+// ===== SERVER START =====
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
