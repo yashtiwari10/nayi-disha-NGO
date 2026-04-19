@@ -32,7 +32,7 @@ app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/donate', donationRoutes);
 
 // ===== SERVE FRONTEND =====
-const frontendPath = path.join(__dirname, '../client/public');
+const frontendPath = path.join(__dirname, 'client/public');
 
 app.use(express.static(frontendPath));
 
