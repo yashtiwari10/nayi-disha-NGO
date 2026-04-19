@@ -136,7 +136,7 @@ http://localhost:5000
 
 ## 👨‍💻 Built By
 
-**Yash Tiwari** — GNIOT CSE  
+**Yash Tiwari** — GNIOT CSE (AI-DS) 
 Built with ❤️ for **Webathon 2K26** — GNIOT CSE Tech Club  
 NGO ID: **#WB303**
 
