@@ -1,0 +1,8 @@
+{
+  "name": "nayi-disha-ngo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/server.js",
+    "install-deps": "cd server && npm install"
+  }
+}
