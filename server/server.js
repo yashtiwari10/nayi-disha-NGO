@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const path = require('path');
+const fs = require('fs');
 
 const connectDB = require('./config/db');
 
@@ -17,13 +18,12 @@ app.use(express.json());
 // ===== DATABASE =====
 connectDB();
 
-const fs = require('fs');
+// ===== DEBUG ROUTE =====
 app.get('/debug', (req, res) => {
-  const p = path.join(__dirname, '../../client/public');
+  const appContents = fs.readdirSync('/app');
   res.json({
     dirname: __dirname,
-    frontendPath: p,
-    exists: fs.existsSync(p)
+    appContents: appContents
   });
 });
 
