@@ -17,6 +17,16 @@ app.use(express.json());
 // ===== DATABASE =====
 connectDB();
 
+const fs = require('fs');
+app.get('/debug', (req, res) => {
+  const p = path.join(__dirname, '../../client/public');
+  res.json({
+    dirname: __dirname,
+    frontendPath: p,
+    exists: fs.existsSync(p)
+  });
+});
+
 // ===== API ROUTES =====
 app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/donate', donationRoutes);
