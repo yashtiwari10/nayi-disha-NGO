@@ -22,14 +22,16 @@ app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/donate', donationRoutes);
 
 // ===== SERVE FRONTEND =====
-app.use(express.static('C:\\Users\\yt436\\Documents\\Coding\\nayi-disha-NGO\\client\\public'));
+const frontendPath = path.join(__dirname, '../../client/public');
+
+app.use(express.static(frontendPath));
 
 app.use((req, res) => {
-  res.sendFile('C:\\Users\\yt436\\Documents\\Coding\\nayi-disha-NGO\\client\\public\\index.html');
+  res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 // ===== SERVER START =====
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
