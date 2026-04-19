@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const path = require('path');
-const fs = require('fs');
 
 const connectDB = require('./config/db');
 
@@ -18,21 +17,13 @@ app.use(express.json());
 // ===== DATABASE =====
 connectDB();
 
-// ===== DEBUG ROUTE =====
-app.get('/debug', (req, res) => {
-  const appContents = fs.readdirSync('/app');
-  res.json({
-    dirname: __dirname,
-    appContents: appContents
-  });
-});
-
 // ===== API ROUTES =====
 app.use('/api/volunteer', volunteerRoutes);
 app.use('/api/donate', donationRoutes);
 
 // ===== SERVE FRONTEND =====
-const frontendPath = path.join(__dirname, 'client/public');
+const frontendPath = path.join(__dirname, '../client/public');
+
 app.use(express.static(frontendPath));
 
 app.use((req, res) => {
